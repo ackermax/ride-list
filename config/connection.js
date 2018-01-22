@@ -1,4 +1,4 @@
-//connecting to the databse and exporting it to clean up our code
+//connecting to the databse and exporting it to clean up our server.js file
 
 var mysql = require("mysql");
 
