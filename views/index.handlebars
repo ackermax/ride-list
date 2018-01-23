@@ -1,0 +1,50 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <img src="assets/img/castle.jpg" class="center valign-wrapper responsive-img" id="img-center">
+            <br>
+            <h1 class="center">The Ride List!</h1>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s4">
+            <h3 class="center">Want to ride:</h3>
+            <div class="divider"></div>
+            <ul id="to-ride">
+                {{#each rides}} {{#unless rode}}
+                <li>
+                    <h5>{{this.ride_name}}
+                        <a data-id="{{this.id}}" class="waves-effect waves-light btn purple darken-4 right ride-button">Rode it!</a>
+                    </h5>
+                </li>
+                {{/unless}} {{/sleep}}
+            </ul>
+        </div>
+        <form class="col s4">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" id="ride-name" class="validate">
+                    <label for="ride-name">Ride</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <button type="submit" class="btn waves-effect waves-light">Add ride!</button>
+                </div>
+            </div>
+        </form>
+        <div class="col s4">
+            <h3 class="center">Rode:</h3>
+            <div class="divider"></div>
+            <ul id="rode">
+                {{#each rides}} {{#if rode}}
+                <li>
+                    <h5>{{this.ride_name}}</h5>
+                </li>
+                {{/if}} {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

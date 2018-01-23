@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ride-Page -- The Test!</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <img src="assets/img/castle.jpg" class="center valign-wrapper responsive-img" id="img-center">
+                    <br>
+                    <h1 class="center">The Ride List!</h1>
+                    <div class="divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s4">
+                    <h3 class="center">Want to ride:</h3>
+                    <div class="divider"></div>
+                    <ul id="to-ride">
+                        <li>
+                            <h5>Space Mountain!<a class="waves-effect waves-light btn purple darken-4 right">Rode it!</a></h5> 
+                        </li>
+                    </ul>
+                </div>
+                <form class="col s4">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" id="ride-name" class="validate">
+                            <label for="ride-name">Ride</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <button type="submit" class="btn waves-effect waves-light">Add ride!</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="col s4">
+                    <h3 class="center">Rode:</h3>
+                    <div class="divider"></div>
+                    <ul id="rode">
+                            <li>
+                                <h5>Space Mountain!</h5>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
