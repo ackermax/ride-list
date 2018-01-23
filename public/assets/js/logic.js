@@ -10,7 +10,9 @@ $(document).ready(function () {
 
     $("#new-ride").on("submit", function (e) {
         e.preventDefault();
-
+        if ($("#ride-name").val().trim() === "") {
+            return alert("You need to enter a ride!");
+        }
         var newRide = {
             name: $("#ride-name").val().trim()
         };
