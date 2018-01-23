@@ -1,9 +1,9 @@
 var connection = require("./connection.js");
 
 var orm = {
-    selectAll: function (select, table, cb) {
-        var queryString = "SELECT ?? FROM ??";
-        connection.query(queryString, [select, table], function (err, result) {
+    selectAll: function (table, cb) {
+        var queryString = "SELECT * FROM ??";
+        connection.query(queryString, [table], function (err, result) {
             if (err) throw err;
             cb(result);
         });

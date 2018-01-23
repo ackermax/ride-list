@@ -2,7 +2,7 @@ var orm = require("../config/orm.js");
 
 var ride = {
     all: function (cb) {
-        orm.selectAll("*", "rides", function (res){
+        orm.selectAll("rides", function (res){
             cb(res);
         });
     },
