@@ -6,13 +6,13 @@ var ride = {
             cb(res);
         });
     },
-    create: function(col, val, cb) {
-        orm.insertOne("rides", val, function(res) {
+    create: function(val, cb) {
+        orm.insertOne("rides", "ride_name", val, function(res) {
             cb(res);
         });
     },
-    delete: function(col, val, cb) {
-        orm.updateOne("rides", col, val, function(res){
+    update: function(val, cb) {
+        orm.updateOne("rides", "rode", "id", val, function(res){
             cb(res);
         });
     }

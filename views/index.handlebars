@@ -19,10 +19,10 @@
                         <a data-id="{{this.id}}" class="waves-effect waves-light btn purple darken-4 right ride-button">Rode it!</a>
                     </h5>
                 </li>
-                {{/unless}} {{/sleep}}
+                {{/unless}} {{/each}}
             </ul>
         </div>
-        <form class="col s4">
+        <form class="col s4" id="new-ride">
             <div class="row">
                 <div class="input-field col s12">
                     <input type="text" id="ride-name" class="validate">
